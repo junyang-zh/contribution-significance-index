@@ -1,0 +1,26 @@
+[project]
+name = "contribution-significance-index"
+version = "0.0.1"
+authors = [
+  { name="Zhang Junyang", email="user@junyang.me" },
+]
+description = "A novel, rigorous, objective and expressive automated index to qualify contributions"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    pygit2 = ">=1.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/junyang-zh/contribution-significance-index"
+Issues = "https://github.com/junyang-zh/contribution-significance-index/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
