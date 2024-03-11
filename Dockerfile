@@ -9,12 +9,20 @@ RUN apt update && apt install -y \
     python3 \
     python3-pip
 
-# Install installing dependencies
+# Install installing tools
 RUN apt update && apt install -y \
     wget \
     gnupg \
     unzip \
     software-properties-common
+
+# Install building dependencies
+RUN apt update && apt install -y \
+    libelf-dev \
+    bison \
+    flex \
+    libssl-dev \
+    bc
 
 # Install LLVM-17 and CLang-17
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
