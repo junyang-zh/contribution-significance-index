@@ -13,10 +13,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-dependencies = [
-    pygit2 = ">=1.6.0",
-]
-
 [project.urls]
 Homepage = "https://github.com/junyang-zh/contribution-significance-index"
 Issues = "https://github.com/junyang-zh/contribution-significance-index/issues"
